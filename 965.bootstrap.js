@@ -1,0 +1,3 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[965],{965:(e,t,r)=>{"use strict";r.r(t),r.d(t,{default:()=>s});
+// @license © 2020 Google LLC. Licensed under the Apache License, Version 2.0.
+const i=async(e,t,r=e.name)=>{const s=[],a=[];for await(const n of e.getEntries()){const c=`${r}/${n.name}`;n.isFile?a.push(n.getFile().then((t=>(t.directoryHandle=e,Object.defineProperty(t,"webkitRelativePath",{configurable:!0,enumerable:!0,get:()=>c}))))):n.isDirectory&&t&&s.push(i(n,t,c))}return[...(await Promise.all(s)).flat(),...await Promise.all(a)]},s=async(e={})=>{e.recursive=e.recursive||!1;const t=await window.chooseFileSystemEntries({type:"open-directory"});return i(t,e.recursive)}}}]);

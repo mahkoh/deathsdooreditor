@@ -1,0 +1,3 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[847],{847:(e,t,s)=>{"use strict";s.r(t),s.d(t,{default:()=>n});
+// @license © 2020 Google LLC. Licensed under the Apache License, Version 2.0.
+const i=async e=>{const t=await e.getFile();return t.handle=e,t},n=async(e={})=>{const t={};e.mimeTypes?e.mimeTypes.map((s=>{t[s]=e.extensions||[]})):t["*/*"]=e.extensions||[];const s=await window.showOpenFilePicker({id:e.id,startIn:e.startIn,types:[{description:e.description||"",accept:t}],multiple:e.multiple||!1}),n=await Promise.all(s.map(i));return e.multiple?n:n[0]}}}]);

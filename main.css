@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* { box-sizing: border-box; }
+
+code {
+    font-family: Roboto Mono, monospace;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #494f5c;
+    color: #e8eef2;
+    padding: 0;
+    margin: 0;
+}
+
+select, input {
+    background-color: #595f6c;
+    color: #e8eef2;
+    outline: none;
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+    border: 1px solid #3f434e;
+}
+
+input[type="number"] {
+    width: 5em;
+}
